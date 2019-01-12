@@ -8,7 +8,7 @@ import { JsonService } from '../_services/json.service';
 })
 export class YearlyInfoComponent implements OnInit {
 
-  private jsonOut;
+  public jsonOut;
 
   constructor(private jsonService: JsonService) { }
 
