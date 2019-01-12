@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JsonService } from '../_services/json.service';
 
 @Component({
   selector: 'app-yearly-info',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class YearlyInfoComponent implements OnInit {
 
-  constructor() { }
+  private jsonOut;
+
+  constructor(private jsonService: JsonService) { }
 
   ngOnInit() {
+    this.jsonOut = this.jsonService.getTestJson();
   }
 
 }
