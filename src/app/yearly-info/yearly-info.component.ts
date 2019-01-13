@@ -15,5 +15,4 @@ export class YearlyInfoComponent implements OnInit {
   ngOnInit() {
     this.jsonOut = this.jsonService.getTestJson();
   }
-
 }
